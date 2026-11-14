@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Once Upon a Little Wasp…nce Upon a Little Wasp – A Children's Day Storybook</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;600&family=Nunito:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage" id="stage" aria-live="polite">
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <div class="top">
+    <button class="icon" id="restart" aria-label="Restart the story" title="Restart">↻</button>
+    <span class="counter" id="counter">01 / 09</span>
+    <button class="icon" id="sound" aria-label="Turn sound on" aria-pressed="false" title="Sound">🔇</button>
+  </div>
+
+  <!-- 1 -->
+  <section class="scene" data-trans="scale" aria-label="Scene 1: The opening">
+    <div class="art">
+      <img class="bee" src="assets/wasp.svg" alt="">
+      <div class="book" id="book">
+        <div class="pages"><b>Chapter 2</b><span>The sting operation</span><i></i><i></i><i></i></div>
+        <div class="cover"><span>Little Girl's<br>Storybook</span><em>♥</em><u class="ribbon"></u></div>
+      </div>
+    </div>
+    <div class="text">
+      <h1>Once Upon a time...</h1>
+      <p class="sub">A tiny incident and a little drama.</p>
+      <p class="ded">Dedicated to Cute Little Girl ❤️</p>
+      <button class="btn" id="openBook">Open Your Little Storybook →</button>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="scene" data-trans="slide" aria-label="Scene 2: The elevator">
+    <div class="art">
+      <div class="elevator">
+        <div class="lamp" aria-hidden="true">▲ 7</div>
+        <div class="shaft">
+          <img class="inside bob" src="assets/character-girl.svg" alt="The little girl, happy and carefree">
+          <div class="door dl" data-act data-at="500" data-sfx="ding"></div>
+          <div class="door dr" data-act data-at="500"></div>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <p class="say" data-step data-at="1300">Once upon a time, a little girl was having an ordinary day...</p>
+      <p class="say big" data-step data-at="3300">Everything was perfectly normal...</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="scene" data-trans="fade" aria-label="Scene 3: The wasp">
+    <div class="art">
+      <div class="chr mid"><img class="bob" src="assets/character-girl.svg" alt="The girl"></div>
+      <img class="wasp fly" data-act data-at="300" data-sfx="buzz" src="assets/wasp.svg" alt="A cartoon wasp">
+      <div class="burst" data-act data-at="2600" data-sfx="pop" aria-hidden="true">✸<small>!</small></div>
+      <span class="lines" aria-hidden="true"></span>
+    </div>
+    <div class="text">
+      <p class="bubble" data-step data-at="1600">But someone had other plans...</p>
+      <p class="bubble b2" data-step data-at="2900">BZZZZZZZZ! 🐝</p>
+      <p class="cap" data-step data-at="4000">An unexpected visitor decided to ruin her peaceful day.</p>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="scene" data-trans="up" aria-label="Scene 4: Crying">
+    <div class="art">
+      <div class="chr mid shake"><img src="assets/character-girl-cry.svg" alt="The girl crying, holding her hand">
+        <i class="tear t1"></i><i class="tear t2"></i></div>
+      <span class="lines l2" aria-hidden="true"></span>
+    </div>
+    <div class="text">
+      <p class="bubble" data-step data-at="500" data-sfx="cry">Ouchhhhh! It hurts! 😭</p>
+      <p class="bubble b2" data-step data-at="1700">Why meeeee?!</p>
+      <p class="cap" data-step data-at="2900">And just like that... the little girl mode was activated.</p>
+      <div class="meter" data-step data-at="3800"><span>Drama level: 100/100</span><b></b></div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="scene" data-trans="slide" aria-label="Scene 5: The unofficial doctor">
+    <div class="art">
+      <div class="chr left small"><img class="bob" src="assets/character-girl-cry.svg" alt="The girl, still sniffling"></div>
+      <div class="chr right small slide-r" data-act data-at="300"><img class="bob" src="assets/character-boy.svg" alt="The unofficial doctor with a remedy bottle"></div>
+      <div class="badge" data-step data-at="2600" data-sfx="pop">MBBS – Mom's Basic Belief System</div>
+    </div>
+    <div class="text">
+      <p class="bubble" data-step data-at="1000">Okay, okay! Don't cry, Little Girl.</p>
+      <p class="bubble b2" data-step data-at="1900">Your unofficial doctor has arrived! <small>Doctor sahab duty par hain!</small></p>
+      <p class="fine" data-step data-at="3300">Experience: 0 years of medical college.<br>Experience in taking care of one Little Girl: Lifetime.</p>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="scene" data-trans="flip" aria-label="Scene 6: Mom's remedy">
+    <div class="art">
+      <div class="chr left small"><img src="assets/character-girl-cry.svg" alt="The girl, sniffling"></div>
+      <div class="chr right small drop" data-act data-at="300"><img class="bob" src="assets/character-boy.svg" alt="The boy offering Mom's Remedy"></div>
+      <div class="rx" data-step data-at="3200">
+        <b>Prescription</b>
+        <p>PATIENT: Cute Little Girl</p><p>DOCTOR: Unofficial Doctor</p><p>CONSULTANT: Mom</p><p>TREATMENT: Mom-approved care</p>
+        <div class="stamp" data-act data-at="4400" data-sfx="stamp">APPROVED BY MOM</div>
+      </div>
+    </div>
+    <div class="text">
+      <p class="bubble" data-step data-at="900">Don't worry. I've already consulted the real doctor... MY MOM!...Bas thoda mitti laga do!!!</p>
+      <p class="bubble b2" data-step data-at="2100">Now, no more crying. Okay? <small>Patient ko extra pampering ki zarurat hai!</small></p>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="scene" data-trans="scale" aria-label="Scene 7: The recovery">
+    <div class="art cal">
+      <div class="day" data-step data-at="400" data-sfx="page"><b>DAY 1</b>The unexpected sting.</div>
+      <div class="day" data-step data-at="1500" data-sfx="page"><b>DAY 2</b>Swelling and itching.</div>
+      <div class="day" data-step data-at="2600" data-sfx="page"><b>DAY 3</b>Still receiving special attention.</div>
+      <div class="day" data-step data-at="3700" data-sfx="page"><b>DAY 4</b>The unofficial doctor continues his duty.</div>
+      <div class="day" data-step data-at="4800" data-sfx="page"><b>DAY 5</b>The little patient is feeling better.</div>
+    </div>
+    <div class="text">
+      <p class="cap" data-step data-at="5700">From buzzing pain to buzzing chats!</p>
+      <p class="say" data-step data-at="6600">One wasp. Five days. Unlimited memories.</p>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="scene" data-trans="flip" id="memory" aria-label="Scene 8: The most special memory">
+    <div class="text top-text">
+      <p class="say big">But the sweetest part of this story...</p>
+      <p class="sub intro">She turned this little incident into a memory.</p>
+    </div>
+    <div class="art">
+      <div class="notebook" id="notebook">
+        <div class="nb-page"><img src="assets/original-drawing.png" alt="The original hand-drawn page: Chapter 2, The sting operation (Attack of the wasp)"></div>
+        <div class="nb-cover"><span>Our Story</span><u class="ribbon"></u></div>
+      </div>
+    </div>
+    <div class="text">
+      <button class="btn intro" id="openMemory">Open Your Original Memory ❤️</button>
+      <p class="hand outro">That day, you didn't just get stung by a wasp...you unlocked your superhero identity... Wasp Woman! 🐝🦸‍♀️ And ever since that day, you've officially been saved in my contacts as Wasp Woman 😂</p>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="scene" data-trans="scale" aria-label="Scene 9: Happy Children's Day">
+    <div class="art">
+      <div class="chr left tiny"><img class="bob" src="assets/character-girl.svg" alt="The girl, smiling"></div>
+      <div class="chr right tiny"><img class="bob" src="assets/character-boy.svg" alt="The boy, smiling"></div>
+    </div>
+    <div class="text final">
+      <h2>HAPPY CHILDREN'S DAY, LITTLE GIRL! ❤️</h2>
+      <div class="msg">
+        <p>Keep smiling, keep laughing, and never lose that little girl inside you.</p>
+        <p class="sign">With lots of care ❤️</p>
+      </div>
+      <p class="hand secret" id="secret">Take it easy, patient. Your unofficial doctor prescribes a little more smiling, a little less worrying, and lots of happiness!</p>
+      <div class="row">
+        <button class="btn alt" id="again">Read Our Story Again ↻</button>
+        <button class="btn" id="surprise">Final Message✨</button>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav" aria-label="Story navigation">
+    <button class="btn nb" id="prev" aria-label="Previous scene">← Back</button>
+    <button class="btn nb" id="next" aria-label="Next scene">Next →</button>
+  </nav>
+  <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
